@@ -1,0 +1,181 @@
+.opções {
+
+    display: none;
+}
+
+.cabecalho__menu-hamburger {
+
+    width: 30px;
+    height: 45px;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho {
+
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}   
+
+.container__botao {
+
+    display: none;
+}
+
+.container__botao:checked ~ .lista-menu {
+
+    display: block;
+
+
+}
+
+.container {
+
+    align-items: center;
+    display: flex;
+
+}
+
+.container__imagem {
+
+    padding: 1em;
+}
+
+.lista-menu {
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+
+}
+
+.lista-menu__titulo, .lista-menu__item {
+
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+
+.lista-menu__titulo {
+
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+
+    background: var(--azul-degrade); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+}
+
+.container__titulo {
+
+    display: none;
+
+}
+
+.lista__desktop {
+
+    display: none;
+}
+
+.opções-menu {
+
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .cabecalho__menu-hamburger {
+
+        display: none;
+
+    }
+
+    .container__titulo, .container__titulo--negrito  {
+
+        font-size: 30px;
+        font-style: var(--fonte-secundaria);
+        
+        
+    }
+
+    .container__titulo {
+
+        display: block;
+        font-weight: 400;
+
+    }
+
+    .container__titulo--negrito {
+
+        font-weight: 700;
+
+    }
+
+    .opções{
+
+        display: flex;
+        
+        
+    }
+
+    .opções__menu-itens{
+
+        padding: 0 1em;
+        text-transform: uppercase;
+
+    }
+
+    .opções__menu-link {
+
+        text-decoration: none;
+        color: #000000;
+
+
+    }
+
+    .favoritos__1024 {
+
+        display: none;
+
+    }
+
+    .container__imagem {
+
+        padding: 2em;
+
+    }
+
+    .cabecalho {
+
+        padding: 0 1em;
+        height: 10vh;
+    }
+
+    .opções__menu-check {
+
+        display: none;
+
+    }
+
+    .opções__menu-check:checked ~ .lista-menu {
+
+        display: block;
+        width: auto;
+        height: auto;
+    }        
+
+    
+}
+
